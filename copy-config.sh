@@ -1,1 +1,2 @@
-cp -rv home/.config/* ~/.config/
+cp -rv home/.config/* ~/.config
+cp home/.bashrc ~/
