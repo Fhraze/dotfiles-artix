@@ -7,6 +7,6 @@ if pgrep -x "wf-recorder" > /dev/null; then
     notify-send "Recording finished"
 else
     # "wf-recorder is NOT running."
-    wf-recorder --audio --file="/home/$USER/Videos/$(date +'%Y-%m-%d_%H-%M-%S').mp4" -g "$(slurp)"
+    wf-recorder --audio=combined-sink.monitor --file="/home/$USER/Videos/$(date +'%Y-%m-%d_%H-%M-%S').mp4" -g "$(slurp)"  
     #notify-send "wf-recorder is running"
 fi
